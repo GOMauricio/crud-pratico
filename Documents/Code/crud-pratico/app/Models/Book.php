@@ -3,12 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-
-// Definição dos componentes do BD, sendo as colunas referentes a cada livro
-
-class User extends Authenticatable
+class Book extends Model
 {
     use HasFactory;
 
@@ -17,6 +14,5 @@ class User extends Authenticatable
         'author',
         'genre',
         'published_year',
-        'isbn',
     ];
 }
